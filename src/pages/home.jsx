@@ -16,7 +16,7 @@ class Home extends React.Component {
 				<p>{this.props.homeStore.title}</p>
 				<Link to="/about">go to About</Link>
 
-				<div style={{ textAlign: 'left', width: '450px', margin: 'auto' }}>
+				<div style={{ textAlign: 'left', width: '100%', margin: 'auto' }}>
 					<p>下面是列表数据：</p>
 					{
 						this.props.homeStore.list && this.props.homeStore.list.map( ( el ) => {

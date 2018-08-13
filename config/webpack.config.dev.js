@@ -11,6 +11,7 @@ const eslintFormatter = require( 'react-dev-utils/eslintFormatter' );
 const ModuleScopePlugin = require( 'react-dev-utils/ModuleScopePlugin' );
 const getClientEnvironment = require( './env' );
 const paths = require( './paths' );
+const px2rem = require( 'postcss-px2rem' );
 
 // Webpack uses `publicPath` to determine where the app is being served from.
 // In development, we always serve from the root. This makes config easier.
@@ -190,6 +191,7 @@ module.exports = {
 											],
 											flexbox: 'no-2009',
 										} ),
+										px2rem( { remUnit: 75 } )
 									],
 								},
 							},
