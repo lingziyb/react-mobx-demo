@@ -1,3 +1,8 @@
+/**
+ * 移动端的适配：
+ * 动态计算 根据屏幕宽度设置html的font-size基准值
+ */
+
 const documentElement = document.documentElement;
 
 function callback() {
